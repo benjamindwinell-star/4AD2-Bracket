@@ -4,10 +4,8 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap">
 <style>
 /* Layout: one horizontal bracket per region (bi-district → regional final), then a state section */
-:root{--bg:#f3f5f1;--card:#fff;--fg:#1c2620;--muted:#5f6d64;--line:#cfd8d1;--accent:#b5121b;--win:#e3f1e7;--lose:#9aa59e;
+:root{--bg:#07090d;--card:#11151d;--fg:#eef3fb;--muted:#8f9bb0;--line:#232b3a;--accent:#2f7bff;--win:#0f2550;--lose:#5b6578;color-scheme:dark;
 --display:"Oswald",Impact,sans-serif;--body:"Source Sans 3",system-ui,sans-serif}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121815;--card:#1b231e;--fg:#e6ece7;--muted:#9aa89f;--line:#2e3a32;--accent:#ff5a5f;--win:#1f3a28;--lose:#5d6a62;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#121815;--card:#1b231e;--fg:#e6ece7;--muted:#9aa89f;--line:#2e3a32;--accent:#ff5a5f;--win:#1f3a28;--lose:#5d6a62;color-scheme:dark}
 body{background:var(--bg);color:var(--fg);font-family:var(--body);padding-block:24px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 .wrap{max-width:1300px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
 .eyebrow{font-family:var(--display);letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-size:13px}
@@ -33,10 +31,10 @@ h2{font-family:var(--display);font-size:22px;margin:0 0 10px;padding-bottom:6px;
 .team.win{background:var(--win)}
 .team.win .n::after{content:" ✓";color:var(--accent)}
 .team.lose .n{color:var(--lose)}
-.team.right{box-shadow:inset 3px 0 0 #2e8b57}
+.team.right{box-shadow:inset 3px 0 0 #5aa2ff}
 .team.wrong{box-shadow:inset 3px 0 0 var(--accent)}
 .tag{font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);border-radius:3px;padding:0 4px;flex:none}
-.tag.ok{color:#2e8b57;border-color:#2e8b57}
+.tag.ok{color:#5aa2ff;border-color:#5aa2ff}
 .final{font:600 10px var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:3px 10px;border-top:1px solid var(--line)}
 .team.tbd{cursor:default;color:var(--muted);font-weight:400;font-style:italic}
 </style>
